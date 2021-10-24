@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-app.secret_key = "secret key"
+app.secret_key = "secret key" # SECRETS
 #configure db
 db = yaml.load(open('db.yaml'), Loader=SafeLoader)
 app.config['MYSQL_HOST'] = db['mysql_host']
